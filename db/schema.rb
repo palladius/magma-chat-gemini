@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema[7.1].define(version: 2023_05_14_052436) do
   # These are extensions that must be enabled in order to support this database
+  enable_extension "google_vacuum_mgmt"
   enable_extension "plpgsql"
 
   create_table "bots", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
@@ -40,7 +41,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_05_14_052436) do
     t.datetime "updated_at", null: false
     t.jsonb "analysis", default: {}, null: false
     t.boolean "grow", default: false, null: false
-    t.uuid "user_id", default: "b48d0808-271f-451e-a190-8610009df363", null: false
+    t.uuid "user_id", default: "81570655-73f4-4619-b92f-fae5d5e06bc4", null: false
     t.uuid "bot_id"
     t.boolean "public_access", default: false, null: false
     t.jsonb "settings", default: {"show_invisibles"=>false, "response_length_tokens"=>400}, null: false

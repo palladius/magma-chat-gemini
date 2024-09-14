@@ -388,6 +388,9 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    sqlite3 (1.7.3-aarch64-linux)
+    sqlite3 (1.7.3-arm64-darwin)
+    sqlite3 (1.7.3-x86_64-linux)
     sshkit (1.21.4)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
@@ -447,6 +450,7 @@ PLATFORMS
   aarch64-linux
   arm64-darwin-21
   arm64-darwin-22
+  arm64-darwin-23
   x86_64-linux
 
 DEPENDENCIES
@@ -489,6 +493,7 @@ DEPENDENCIES
   sidekiq (~> 7.0)
   simplecov
   sprockets-rails
+  sqlite3 (~> 1.4)
   stimulus-rails
   stimulus_reflex (~> 3.5.0.pre10)
   strategic (~> 1.2.0)

@@ -14,7 +14,7 @@
 #  created_at           :datetime         not null
 #  updated_at           :datetime         not null
 #  bot_id               :uuid
-#  user_id              :uuid             default("b48d0808-271f-451e-a190-8610009df363"), not null
+#  user_id              :uuid             default("81570655-73f4-4619-b92f-fae5d5e06bc4"), not null
 #
 # Indexes
 #
